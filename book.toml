@@ -14,6 +14,6 @@ command = "mdbook-mermaid"
 default-theme = "ferra"
 preferred-dark-theme = "ferra"
 git-repository-url = "https://github.com/anton-rs/newsletters"
-edit-url-template = "https://github.com/anton-rs/newsletters/edit/main/book/{path}"
+edit-url-template = "https://github.com/anton-rs/newsletters/edit/main/{path}"
 additional-css = ["custom.css"]
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
