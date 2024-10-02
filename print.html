@@ -207,25 +207,27 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="week-0"><a class="header" href="#week-0">Week 0</a></h1>
 <p><em>Publish Date: September 27, 2024</em></p>
 <p><em><a href="https://github.com/anton-rs/newsletters">Newsletters Source</a></em></p>
-<h3 id="overview"><a class="header" href="#overview">Overview</a></h3>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
 <p>This Newsletter is ported over from the Kona project, and is the first
 newsletter for the <em>Alt Stack Team</em>, a team dedicated to the Rust OP Stack
 at <a href="https://www.oplabs.co/">OP Labs</a>.</p>
-<h3 id="updates"><a class="header" href="#updates">Updates</a></h3>
+<h2 id="updates"><a class="header" href="#updates">Updates</a></h2>
 <p>The implementation of the Holocene hardfork is in full-swing, and <a href="https://github.com/refcell">@refcell</a> is well into Holocene in <a href="https://github.com/anton-rs/kona/tree/main/crates/derive"><code>kona-derive</code></a>! For a working document of the fork implementation progress, see https://github.com/anton-rs/kona/issues/556.</p>
 <p>Kona also received a docs refresh courtesy of <a href="https://github.com/clabby">@clabby</a> over at <a href="https://anton-rs.github.io/kona">anton-rs.github.io/kona</a>. We’d love some feedback, specifically on the SDK section!</p>
 <img src="./assets/docs-refresh.png" width="80%">
-<h3 id="blockers"><a class="header" href="#blockers">Blockers</a></h3>
+<h2 id="blockers"><a class="header" href="#blockers">Blockers</a></h2>
 <p>We are blocked on completing the execution layer changes within <a href="https://github.com/anton-rs/kona"><code>kona</code></a> with the <a href="https://github.com/bluealloy/revm"><code>revm</code></a> changes pending. Currently Cody Wang from Coinbase is owning these, and we’ve reached out to see how we can help to keep progress moving.</p>
 <p>We are also blocked on implementing action tests upstream in <a href="https://github.com/ethereum-optimism/optimism/tree/develop/op-e2e"><code>op-e2e</code></a> until the upstream implementation has been completed. However, ours is not complete either, so this will manifest in a week or two.</p>
-<h3 id="projects"><a class="header" href="#projects">Projects</a></h3>
-<h4 id="kona-project"><a class="header" href="#kona-project">Kona Project</a></h4>
+<h2 id="projects"><a class="header" href="#projects">Projects</a></h2>
+<h3 id="kona"><a class="header" href="#kona">Kona</a></h3>
+<p>Start Date: <strong>June 10, 2024</strong></p>
+<p>Estimated Project Length ~= <strong>23 weeks</strong></p>
+<!-- End Date: **November 18, 2024** -->
 <p><em>✅ = DONE | 🚧 = WIP | 🛑 = NOT STARTED</em></p>
-<p>🕜 Total Length of the Project ~= 23 weeks</p>
-<p>Project Start Date: June 10, 2024</p>
-<p>Project End Date: November 18, 2024</p>
-<h5 id="phase-1-asterisc-"><a class="header" href="#phase-1-asterisc-"><strong>Phase 1: Asterisc</strong> ✅</a></h5>
-<pre><code class="language-json">{
+<details>
+    <summary><b>Phase 1: Asterisc ✅</b></summary>
+<pre><code>```json
+{
   "ProxyAdmin": "0x59cff637c814B045F154Be583a24179d3AF9F167",
   "DisputeGameFactoryProxy": "0x69Fe8a33BaEC98698a4170E898B59aE3E0C651aD",
   "AnchorStateRegistryProxy": "0xe2be2262b8F462B3D478Ff9bF7a51B8645772F49",
@@ -236,27 +238,47 @@ at <a href="https://www.oplabs.co/">OP Labs</a>.</p>
   "PreimageOracle": "0x627F825CBd48c4102d36f287be71f4234426b9e4",
   "DelayedWETHProxy": "0xF3D833949133e4E4D3551343494b34079598EA5a",
 }
+```
 </code></pre>
-<h5 id="phase-2-kona-derive-"><a class="header" href="#phase-2-kona-derive-"><strong>Phase 2: Kona Derive</strong> ✅</a></h5>
-<table>
-<tr>
-<th> <b>OP Mainnet Trusted Sync Grafana</b> </th>
-<th> <b>OP Sepolia Trusted Sync Grafana</b> </th>
-</tr>
-<tr>
-<td>
-<img src="./assets/op_mainnet_trusted_sync.png" width="80%">
-</td>
-<td>
-<img src="./assets/op_sepolia_trusted_sync.png" width="80%">
-</td>
-</tr>
-</table>
-<p><strong>Trusted Sync Alerts</strong></p>
-<img src="./assets/trusted_sync_alerts.png" width="80%">
-<h5 id="phase-3-client--host-"><a class="header" href="#phase-3-client--host-"><strong>Phase 3: Client + Host ✅</strong></a></h5>
-<h5 id="phase-4-test-suite-"><a class="header" href="#phase-4-test-suite-"><strong>Phase 4: Test Suite ✅</strong></a></h5>
-<h5 id="phase-5-holocene----wip"><a class="header" href="#phase-5-holocene----wip"><strong>Phase 5: Holocene - 🚧 WIP</strong></a></h5>
+</details>
+<details>
+    <summary><b>Phase 2: Kona Derive ✅</b></summary>
+    <table>
+    <tr>
+    <th> <b>OP Mainnet Trusted Sync Grafana</b> </th>
+    <th> <b>OP Sepolia Trusted Sync Grafana</b> </th>
+    </tr>
+    <tr>
+    <td style='text-align:center; vertical-align:middle'>
+    <img src="./assets/op_mainnet_trusted_sync.png" width="80%">
+    </td>
+    <td style='text-align:center; vertical-align:middle'>
+    <img src="./assets/op_sepolia_trusted_sync.png" width="80%">
+    </td>
+    </tr>
+    </table>
+    <b>Trusted Sync Alerts</b>
+    <p style='text-align:center; vertical-align:middle'>
+    <img src="./assets/trusted_sync_alerts.png" width="80%">
+    </p>
+</details>
+<details><summary><b>Phase 3: Client + Host ✅</b></summary></details>
+<details><summary><b>Phase 4: Test Suite ✅</b></summary></details>
+<details><summary><b>Phase 5: Holocene - 🚧 WIP</b></summary></details>
+<h4 id="whats-next"><a class="header" href="#whats-next">What’s Next</a></h4>
+<ul>
+<li><code>P0</code> - Complete Holocene work.
+<ul>
+<li><a href="https://github.com/anton-rs/kona/issues/556">Tracker</a></li>
+<li>Action tests</li>
+</ul>
+</li>
+<li><code>P1</code> - Asterisc improvements
+<ul>
+<li><a href="https://github.com/ethereum-optimism/asterisc/issues/77">asterisc/issues/77</a></li>
+</ul>
+</li>
+</ul>
 <!-- Links -->
 <!-- Misc External -->
 <!-- Newsletters -->
