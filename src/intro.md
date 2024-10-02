@@ -6,7 +6,15 @@ _Newsletters for the Alt Stack Team._
 
 ## Introduction
 
-..
+Newsletters is a collection of public status updates for the **Alt Stack Team**, a team dedicated to an alternative OP Stack at [OP Labs][op-labs] that is primarily built in Rust.
+
+This book is updated weekly by members of [OP Labs][op-labs] as well as open source contributors.
+
+## Provenance
+
+This book inherits the [ferra] theme from [kona's book][kona-book].
+
+It is loosely based on format of the [Rust RFC book], with a flat page composition. All updates are listed in the left-hand side Navbar.
 
 ## Contributing
 
