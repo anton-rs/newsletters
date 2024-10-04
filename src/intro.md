@@ -14,7 +14,7 @@ This book is updated weekly by members of [OP Labs][op-labs] as well as open sou
 
 This book inherits the [ferra] theme from [kona's book][kona-book].
 
-It is loosely based on format of the [Rust RFC book], with a flat page composition. All updates are listed in the left-hand side Navbar.
+It is loosely based on format of the [Rust RFC book][rfcs], with a flat page composition. All updates are listed in the left-hand side Navbar.
 
 ## Contributing
 
