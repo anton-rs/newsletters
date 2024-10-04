@@ -1,5 +1,6 @@
 <!-- Misc External -->
 
+[rfcs]: https://rust-lang.github.io/rfcs/
 [ferra]: https://github.com/casperstorm/ferra
 [revm]: https://github.com/bluealloy/revm
 [op-e2e]: https://github.com/ethereum-optimism/optimism/tree/develop/op-e2e
